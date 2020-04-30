@@ -10,10 +10,10 @@ html {
     align-items: center;
     height: 80px;
     width: 100%;
-    background-color: black;
+    background-color: #222222;
     font-family: 'Orbitron', sans-serif;
     font-size: 40px;
-    color: black;
+    color: #1c5d99;
     
 
     /* box-shadow: */
@@ -40,26 +40,25 @@ html {
   from {
     text-shadow: 0 0 10px #fff, 
     0 0 20px #fff, 
-    0 0 30px red, 
-    0 0 40px red, 
-    0 0 50px red, 
-    0 0 60px red, 
-    0 0 70px red;
+    0 0 30px #1c5d99, 
+    0 0 40px #1c5d99, 
+    0 0 50px #1c5d99, 
+    0 0 60px #1c5d99, 
+    0 0 70px #1c5d99;
   }
   to {
     text-shadow: 0 0 20px #fff, 
-    0 0 30px red, 
-    0 0 40px red, 
-    0 0 50px red, 
-    0 0 60px red, 
-    0 0 70px red, 
-    0 0 80px red;
+    0 0 30px #1c5d99, 
+    0 0 40px #1c5d99, 
+    0 0 50px #1c5d99, 
+    0 0 60px #1c5d99, 
+    0 0 70px #1c5d99, 
+    0 0 80px #1c5d99;
   }
 }
 
-
 .grid {
-    background-color: black;
+    background-color: #bbcde5;
     width: 598px;
     margin: auto;
     margin-top: 5%;
@@ -68,46 +67,9 @@ html {
     
 }
 
-
 .pad-row {
     display: flex;
     margin-bottom: 20px;
-}
-
-.pad-row-item {
-    height: 50px;
-    width: 50px;
-    background-color: red;
-    border: 1px solid white;
-    margin-left: 20px;
-    border-radius: 6px;
-    transition: all .4s;
-}
-
-.pad-row-item:hover {
-    background-color: green;
-    cursor: pointer;
-}
-
-.hidden-check {
-  display: none;
-}
-
-.test-css-box {
-  background-color: red;
-  /* display: block; */
-  width: 50px;
-  height: 50px;
-  margin-left: 20px;
-  border-radius: 6px;
-  transition: all .4s;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.hidden-check:checked + .test-css-box{
-  /* background-color: green; */
-  animation: myanimation 1s infinite;
 }
 
 @keyframes myanimation {
@@ -116,4 +78,55 @@ html {
   50%{background-color:green;}
   75%{background-color:brown;}
   100% {background-color: violet;}
+}
+
+ input[type=checkbox] {
+    display:none;
+  }
+
+  span {
+    border:1px solid white;
+    border-radius:5%;
+    font-weight:100;
+    background-color: red;
+    text-decoration:none;
+    font-family: Arial;
+    text-align:center;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    cursor:pointer;
+    display:inline-block;
+    transition:background-color 150ms ease-in;
+    transition: all .4s;
+}
+
+span:hover {
+  background-color:rgba(250, 206, 14, 0.9);
+}
+
+input[type=checkbox]:checked + span {
+  text-decoration:none;
+  /* background-color: purple; */
+  animation: myanimation 1s infinite;
+  border-radius:6px;
+}
+
+
+input[type=checkbox]:checked:hover + span {
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+
+}
+
+.displayed-box {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: #1c5d99;
+  border: 1px solid white;
+  margin-left: 20px;
+  border-radius: 6px;
+  transition: all .4s;
 }

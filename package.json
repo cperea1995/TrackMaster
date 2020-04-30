@@ -37,6 +37,8 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "regenerator-runtime": "^0.13.5",
     "tone": "^14.6.4"
   }
 }

@@ -68,6 +68,7 @@ html {
     
 }
 
+
 .pad-row {
     display: flex;
     margin-bottom: 20px;
@@ -88,16 +89,31 @@ html {
     cursor: pointer;
 }
 
-#container {
-    position: absolute;
-    height: 200px;
-    border: 5px solid black;
+.hidden-check {
+  display: none;
 }
 
-.whitenote {
-    height: 100%;
-    width: 50px;
-    background-color: white;
-    float: left;
-    border-right: 1px solid black;
+.test-css-box {
+  background-color: red;
+  /* display: block; */
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 6px;
+  transition: all .4s;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.hidden-check:checked + .test-css-box{
+  /* background-color: green; */
+  animation: myanimation 1s infinite;
+}
+
+@keyframes myanimation {
+  0% {background-color: blue;}
+  25%{background-color:yellow;}
+  50%{background-color:green;}
+  75%{background-color:brown;}
+  100% {background-color: violet;}
 }

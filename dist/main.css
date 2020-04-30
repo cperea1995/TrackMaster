@@ -1,0 +1,142 @@
+body,
+html {
+    background-image: url(images/audio-audio-mixer-controls-electronics-690779.jpg);
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #222222;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    color: #1c5d99;
+    
+
+    /* box-shadow: */
+    /*inset 0 0 50px #fff,      /* inner white */
+    /*inset 20px 0 80px black,   /* inner left magenta short */
+    /*inset -20px 0 80px black,  /* inner right cyan short */
+    /*inset 20px 0 300px black,  /* inner left magenta broad */
+    /*inset -20px 0 300px red, /* inner right cyan broad */
+    /*0 0 50px #fff,            /* outer white */
+    /*-10px 0 80px black,        /* outer left magenta */
+    /*10px 0 80px black;         /* outer right cyan */
+}
+
+.trackmaster {
+  font-size: 60px;
+  /* color: #fff; */
+  /* text-align: center; */
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 
+    0 0 20px #fff, 
+    0 0 30px #1c5d99, 
+    0 0 40px #1c5d99, 
+    0 0 50px #1c5d99, 
+    0 0 60px #1c5d99, 
+    0 0 70px #1c5d99;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 
+    0 0 30px #1c5d99, 
+    0 0 40px #1c5d99, 
+    0 0 50px #1c5d99, 
+    0 0 60px #1c5d99, 
+    0 0 70px #1c5d99, 
+    0 0 80px #1c5d99;
+  }
+}
+
+.grid {
+    background-color: #bbcde5;
+    width: 598px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 40px 20px 20px 20px;
+    border-radius: 15px;
+    
+}
+
+.pad-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@-webkit-keyframes myanimation {
+  0% {background-color: blue;}
+  25%{background-color:yellow;}
+  50%{background-color:green;}
+  75%{background-color:brown;}
+  100% {background-color: violet;}
+}
+
+@keyframes myanimation {
+  0% {background-color: blue;}
+  25%{background-color:yellow;}
+  50%{background-color:green;}
+  75%{background-color:brown;}
+  100% {background-color: violet;}
+}
+
+ input[type=checkbox] {
+    display:none;
+  }
+
+  span {
+    border:1px solid white;
+    border-radius:5%;
+    font-weight:100;
+    background-color: red;
+    text-decoration:none;
+    font-family: Arial;
+    text-align:center;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    cursor:pointer;
+    display:inline-block;
+    transition:background-color 150ms ease-in;
+    transition: all .4s;
+}
+
+span:hover {
+  background-color:rgba(250, 206, 14, 0.9);
+}
+
+input[type=checkbox]:checked + span {
+  text-decoration:none;
+  /* background-color: purple; */
+  -webkit-animation: myanimation 1s infinite;
+          animation: myanimation 1s infinite;
+  border-radius:6px;
+}
+
+
+input[type=checkbox]:checked:hover + span {
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+
+}
+
+.displayed-box {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: #1c5d99;
+  border: 1px solid white;
+  margin-left: 20px;
+  border-radius: 6px;
+  transition: all .4s;
+}
+
+/*# sourceMappingURL=main.css.map*/

@@ -1,4 +1,4 @@
 import './styles/index.css'
-import './scripts/test'
+import './scripts/looper'
 
 

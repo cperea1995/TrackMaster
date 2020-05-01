@@ -130,3 +130,65 @@ input[type=checkbox]:checked:hover + span {
   border-radius: 6px;
   transition: all .4s;
 }
+
+.start-button {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+  font-size: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  border-radius: 6px;
+  margin-left: 10px;
+  transition: all .2s;
+}
+
+.pause-button {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+  /* margin-top: 5px; */
+  font-size: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  border-radius: 6px;
+  transition: all .2s;
+}
+
+.clear-button {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+  /* margin-top: 5px; */
+  font-size: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  border-radius: 6px;
+  margin-left: 10px;
+  transition: all .2s;
+}
+
+.controlls {
+  background-color: gray;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  margin-left: 20px;
+  border-radius: 6px;
+  margin-right: 20px;
+  /* flex-direction: column; */
+}
+
+.enabled {
+  background-color: green;
+}
+
+.enabled-clear {
+  background-color: red;
+}

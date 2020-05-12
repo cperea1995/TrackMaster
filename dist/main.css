@@ -59,7 +59,7 @@ html {
 .grid {
     background-color: #bbcde5;
     width: 598px;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 5%;
     padding: 40px 20px 20px 20px;
     border-radius: 15px;
@@ -200,6 +200,134 @@ input[type=checkbox]:checked:hover + span {
 .enabled-clear {
   background-color: red;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: black;
+}
+
+.main-page-container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px;
+   overflow: hidden;
+ display: block;
+}
+
+.grid-help-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/**/
+
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  overflow-y: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav p {
+  text-align: center;
+  font-size: 25px;
+  color: #818181;
+  padding-top: 8px;
+}
+
+.sidenav h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #818181;
+  padding-bottom: 10px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.howto {
+  cursor: pointer;
+}
+
+.help {
+  font-size: 100px;
+  color: white;
+}
+
+.icons {
+  font-size: 100px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.linkedin {
+  /* padding-left: 6px; */
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  width: 450px;
+  height: 300px;
+  border-radius: 15px;
+  padding-right: 14px;
+}
+
+.social-names {
+  /* margin-top: 15px; */
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+}
+
+.social-links {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.help-text {
+  padding-left: 15px;
+}
+
 
 
 /*# sourceMappingURL=main.css.map*/

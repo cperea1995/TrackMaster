@@ -57,7 +57,8 @@ window.addEventListener('DOMContentLoaded', () => {
             clearButton.classList.remove('enabled');
         }
         Tone.Transport.pause();
-        pauseButton.classList.add('enabled')
+        pauseButton.classList.add('enabled');
+        
     })
 
     clearButton.addEventListener('click', () => {

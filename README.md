@@ -40,3 +40,8 @@ The looper is consistantly running even when no pads are selected. When a user c
         index++;
     }
 ```
+
+### Future Updates:
+* Instrument Kits
+* Recording
+* BPM Adjustment

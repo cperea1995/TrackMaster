@@ -244,6 +244,7 @@ input[type=checkbox]:checked:hover + span {
   font-size: 25px;
   color: #818181;
   padding-top: 8px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .sidenav h1 {
@@ -251,6 +252,7 @@ input[type=checkbox]:checked:hover + span {
   font-size: 40px;
   color: #818181;
   padding-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .sidenav a:hover {
@@ -319,4 +321,3 @@ input[type=checkbox]:checked:hover + span {
 .help-text {
   padding-left: 15px;
 }
-

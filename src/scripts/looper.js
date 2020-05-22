@@ -88,8 +88,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     
     // Tone.Transport.bpm.value = 240;
+    
     Tone.Transport.scheduleRepeat(repeat, '8n')
-    // Tone.Transport.start();
     
     function repeat(time) {
         let step = index % 8
@@ -99,7 +99,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 row = rows[i],
                 input = row.querySelector(`label:nth-child(${step + 1})`),
                 checkbox = input.querySelector('input');
-            // debugger
             
             if (checkbox.checked) synth.triggerAttackRelease(note, '8n', time);
         }

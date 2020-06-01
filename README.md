@@ -2,10 +2,10 @@
 
 ### Architecture and Technologies
 TrackMaster was built using:
-* Vanilla JavaScript
+* Vanilla JavaScript 10.13.0
 * HTML5
 * CSS3
-* Node.js
+* Node.js 10.13.0
 * Webpack
 
 ### Background and Overview 
@@ -13,12 +13,12 @@ TrackMaster lets anyone from beginner to master level create quick, easy and cat
 
 [Live Site](https://cperea1995.github.io/TrackMaster/)
 
-![TrackMaster GIF](https://gyazo.com/efae2c0e982b436f795136d9f5daa9a0.gif)
+![TrackMaster GIF](./assets/trackmaster.gif)
 
 ### Looper:
 The looper is consistantly running even when no pads are selected. When a user comes up with a track they are pleased with audio execution will not begin until the play button is pressed. The looper itterates through an array array of all the rows grabbed using vanilla javascript DOM manipulation. For every individual row each pad is selected and checked with a conditional to see if the user has enabled it. If the pad is enabled then the instrument and note for that row are assigned to the pad to be played for the duration of an 8th note. The loop is schedule to repeat every 8th note at 120bpm.
 
-```
+``` javascript
     const rows = document.body.querySelectorAll('.pad-row')
     const notes = ['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4', 'C5']
     let index = 0;

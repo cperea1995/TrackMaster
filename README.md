@@ -41,6 +41,36 @@ The looper is consistantly running even when no pads are selected. When a user c
     }
 ```
 
+### Clearing Pads:
+Since each pad is its own individual node and every pad is a checkbox, I was able to select all of them at once using the getElementsByTagName function. Once I had all the inputs i could check if they were enabled, if they were the property would be changed to disabled and the Transport.stop function from Tone.js was called to stop all audio playback. I wanted the user to be aware that clearing is in progress so I added an asynchronous timeout which triggers a callback that changes the eraser symbol to an X after 1 second.
+
+``` javascript
+    clearButton.addEventListener('click', () => {
+        if (playButton.classList.contains('enabled') || pauseButton.classList.contains('enabled')) {
+            playButton.classList.remove('enabled');
+            pauseButton.classList.remove('enabled');
+        }
+        const inputs = Array.from(document.getElementsByTagName('input'));
+
+        for (let i = 0; i < inputs.length; i++) {
+            const input = inputs[i];
+
+            if (input.checked) {
+                input.checked = false;
+            }
+        }
+        Tone.Transport.stop();
+        clearButton.classList.add('enabled-clear');
+        document.body.querySelector('.clear-button').innerHTML = '<i class="fas fa-times"></i>'
+        setTimeout(removeEnableClass, 1000);
+    })
+
+    function removeEnableClass () {
+        clearButton.classList.remove('enabled-clear')
+        document.body.querySelector('.clear-button').innerHTML = '<i class="fas fa-eraser">'
+    }
+```
+
 ### Future Updates:
 * Instrument Kits
 * Recording
